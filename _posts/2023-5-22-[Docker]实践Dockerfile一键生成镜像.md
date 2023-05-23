@@ -44,3 +44,7 @@ ENTRYPOINT ["/app"]
 > `docker build`一下      
 >
 > 运行时记得加端口映射`docker run -p src:dst`      
+
+### 小结
+
+熟悉Dockerfile文件的编写，踩了一些坑，最后成功运行

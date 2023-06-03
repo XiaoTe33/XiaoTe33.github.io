@@ -26,7 +26,7 @@ ENV LANG=C.UTF-8
 
 ### :blue_heart:运行mysql容器
 
-> `docker run -it -d --name <mysql_container_name> -p 3306:3306 <mysql_image:tag> `
+> `docker run -it -d --name <mysql_container_name> -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root <mysql_image:tag> `
 
 ### :green_heart:构建http登陆注册服务镜像
 
@@ -178,5 +178,4 @@ func handleError(c *gin.Context, err error) bool {
 	return true
 }
 ```
-
 
